@@ -682,7 +682,7 @@ class CurrencyMarket(models.Model):
     unit_ratio = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     deal = models.BooleanField(default=False)
     label = models.CharField(choices=LABEL_CHOICES, max_length=1000, blank=True,
-                             null=True)  # can use for cataloging products
+                             null=True)
     flavor_text = models.CharField(max_length=200)
     file = models.FileField(null=True, verbose_name='Sprite')
     image_length = models.PositiveIntegerField(blank=True, null=True, default=100,
