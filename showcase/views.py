@@ -16828,7 +16828,6 @@ class ContactSuccessView(BaseView):
         return context
 
 
-from twilio.rest import Client
 from .forms import SellerApplicationForm
 
 from django_otp.plugins.otp_totp.models import TOTPDevice

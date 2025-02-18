@@ -7039,7 +7039,6 @@ class Withdraw(models.Model):
                 return f"{self.user.username} withdrew {self.number_of_cards} cards: {card_choices}"
 
     def get_card_images(self):
-        # Retrieve images from related InventoryObjects
         images = [card.image.url for card in self.cards.all() if card.image]
         return images
 
